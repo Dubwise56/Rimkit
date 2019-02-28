@@ -1,15 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
 
-<ThingDefs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>SalvagedComponent</defName>
+    <label>Salvaged Component</label>
+    <description>Damaged components that can be repaired at machining and component tables.</description>
+    <graphicData>
+      <texPath>Things/Item/SalvagedComponent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>21</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
 
-  <ThingDef Name="DubUnfinishedBase" Abstract="True">
+  <ThingDef>
+    <defName>DubUnfinishedApparel</defName>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedApparel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <thingClass>UnfinishedThing</thingClass>
     <category>Item</category>
     <label>unfinished thing</label>
-    <graphicData>
-      <texPath>Things/Item/Unfinished/UnfinishedSculpture</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
     <altitudeLayer>Item</altitudeLayer>
     <useHitPoints>true</useHitPoints>
     <isUnfinishedThing>true</isUnfinishedThing>
@@ -17,7 +41,6 @@
     <selectable>true</selectable>
     <tradeability>Never</tradeability>
     <drawerType>RealtimeOnly</drawerType>
-    <!-- For CompForbiddable -->
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
       <DeteriorationRate>2.0</DeteriorationRate>
@@ -34,22 +57,10 @@
     </thingCategories>
   </ThingDef>
 
-  <ThingDef ParentName="DubUnfinishedBase">
-    <defName>DubUnfinishedApparel</defName>
-    <label>unfinished apparel</label>
-    <graphicData>
-      <texPath>Things/Item/Unfinished/UnfinishedApparel</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <comps>
-      <li>
-        <compClass>CompColorable</compClass>
-      </li>
-    </comps>
-  </ThingDef>
 
   <ThingDef Name="dubsApparelBase" Abstract="True">
     <thingClass>Apparel</thingClass>
+    <generateAllowChance>0</generateAllowChance>
     <category>Item</category>
     <selectable>True</selectable>
     <pathCost>10</pathCost>
@@ -70,6 +81,15 @@
     <comps>
       <li Class="CompProperties_Forbiddable"/>
     </comps>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+    </apparel>
   </ThingDef>
 
   <ThingDef Name="dubsApparelMakeableBase" ParentName="dubsApparelBase" Abstract="True">
@@ -88,14 +108,13 @@
 
   <ThingDef ParentName="dubsApparelMakeableBase">
     <defName>DubsRepairKit</defName>
-    <thingClass>Dubs_Rimkit.RepairKit</thingClass>
+    <thingClass>Dubs_Rimkit.GenericKit</thingClass>
     <label>Repair Kit</label>
-    <description>Allows the wearer to salvage parts from broken down buildings while fixing them, also increases construction stats.</description>
+    <description>Allows the wearer to salvage parts from broken down buildings while fixing them, success rate is based on skill, also increases construction stats.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/RepairKit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <tickerType>Never</tickerType>
     <statBases>
       <WorkToMake>14000</WorkToMake>
       <MarketValue>1500</MarketValue>
@@ -111,19 +130,9 @@
       <li>Apparel</li>
     </thingCategories>
     <costList>
-      <Cloth>20</Cloth>
-      <Hammer>1</Hammer>
-      <Power_Drill>1</Power_Drill>
+      <Steel>20</Steel>
     </costList>
-    <generateAllowChance>0.15</generateAllowChance>
     <apparel>
-      <careIfWornByCorpse>false</careIfWornByCorpse>
-      <bodyPartGroups>
-        <li>Waist</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Belt</li>
-      </layers>
       <tags>
         <li>MedicalKit</li>
       </tags>
@@ -136,13 +145,96 @@
         <li>CraftingSpot</li>
       </recipeUsers>
       <skillRequirements>
-        <li>
-          <skill>Crafting</skill>
-          <minLevel>5</minLevel>
-        </li>
+        <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
+
+  <!--<ThingDef ParentName="dubsApparelMakeableBase">
+    <defName>DubsMiningKit</defName>
+    <thingClass>Dubs_Rimkit.GenericKit</thingClass>
+    <label>Mining Kit</label>
+    <description>Gains a chance for finding rare minerals or metals while mining, success rate is based on skill, also increases construction stats.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/RepairKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <MarketValue>1500</MarketValue>
+      <Mass>3</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.06</MoveSpeed>
+      <MiningSpeed>0.12</MiningSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <Steel>20</Steel>
+    </costList>
+    <apparel>
+      <tags>
+        <li>MedicalKit</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="dubsApparelMakeableBase">
+    <defName>DubsBotanyKit</defName>
+    <thingClass>Dubs_Rimkit.GenericKit</thingClass>
+    <label>Botany Kit</label>
+    <description>Gains a chance to remove blight from crops, success rate is based on skill, also increases botany stats.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/RepairKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <MarketValue>1500</MarketValue>
+      <Mass>3</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.06</MoveSpeed>
+      <ConstructionSpeed>0.12</ConstructionSpeed>
+      <ConstructSuccessChance>0.12</ConstructSuccessChance>
+      <FixBrokenDownBuildingSuccessChance>0.12</FixBrokenDownBuildingSuccessChance>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <Steel>20</Steel>
+    </costList>
+    <apparel>
+      <tags>
+        <li>MedicalKit</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>-->
 
   <ThingDef ParentName="dubsApparelMakeableBase">
     <defName>GlitterKit</defName>
@@ -153,7 +245,6 @@
       <texPath>Things/Item/Equipment/glitterkit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <tickerType>Never</tickerType>
     <statBases>
       <WorkToMake>14000</WorkToMake>
       <MarketValue>1500</MarketValue>
@@ -171,15 +262,7 @@
       <Cloth>20</Cloth>
       <GlitterworldMedicine>10</GlitterworldMedicine>
     </costList>
-    <generateAllowChance>0.15</generateAllowChance>
     <apparel>
-      <careIfWornByCorpse>false</careIfWornByCorpse>
-      <bodyPartGroups>
-        <li>Waist</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Belt</li>
-      </layers>
       <tags>
         <li>MedicalKit</li>
       </tags>
@@ -189,14 +272,8 @@
     </tradeTags>
     <recipeMaker>
       <skillRequirements>
-        <li>
-          <skill>Medicine</skill>
-          <minLevel>8</minLevel>
-        </li>
-        <li>
-          <skill>Crafting</skill>
-          <minLevel>5</minLevel>
-        </li>
+        <Medicine>8</Medicine>
+        <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
@@ -210,7 +287,6 @@
       <texPath>Things/Item/Equipment/medkit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <tickerType>Never</tickerType>
     <statBases>
       <WorkToMake>8000</WorkToMake>
       <MarketValue>200</MarketValue>
@@ -228,29 +304,15 @@
       <Cloth>20</Cloth>
       <Medicine>10</Medicine>
     </costList>
-    <generateAllowChance>0.15</generateAllowChance>
     <apparel>
-      <careIfWornByCorpse>false</careIfWornByCorpse>
-      <bodyPartGroups>
-        <li>Waist</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Belt</li>
-      </layers>
       <tags>
         <li>MedicalKit</li>
       </tags>
     </apparel>
     <recipeMaker>
       <skillRequirements>
-        <li>
-          <skill>Medicine</skill>
-          <minLevel>6</minLevel>
-        </li>
-        <li>
-          <skill>Crafting</skill>
-          <minLevel>3</minLevel>
-        </li>
+        <Medicine>6</Medicine>
+        <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
@@ -288,15 +350,7 @@
       <Cloth>20</Cloth>
       <HerbalMedicine>10</HerbalMedicine>
     </costList>
-    <generateAllowChance>0.15</generateAllowChance>
     <apparel>
-      <careIfWornByCorpse>false</careIfWornByCorpse>
-      <bodyPartGroups>
-        <li>Waist</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Belt</li>
-      </layers>
       <tags>
         <li>MedicalKit</li>
       </tags>
@@ -306,55 +360,10 @@
         <li>CraftingSpot</li>
       </recipeUsers>
       <skillRequirements>
-        <li>
-          <skill>Medicine</skill>
-          <minLevel>5</minLevel>
-        </li>
-        <li>
-          <skill>Crafting</skill>
-          <minLevel>2</minLevel>
-        </li>
+        <Medicine>5</Medicine>
+        <Crafting>2</Crafting>
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
 
-
-  <!--<ThingDef ParentName="dubsApparelMakeableBase">
-    <defName>CombatKit</defName>
-    <thingClass>Dubs_Rimkit.CombatKit</thingClass>
-    <label>CombatKit</label>
-    <description>CombatKit</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/combatKit</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <tickerType>Normal</tickerType>
-    <statBases>
-      <WorkToMake>8000</WorkToMake>
-      <MarketValue>200</MarketValue>
-      <Mass>4</Mass>
-    </statBases>
-    <thingCategories>
-      <li>Apparel</li>
-    </thingCategories>
-    <costList>
-      <Cloth>30</Cloth>
-      <Steel>50</Steel>
-    </costList>
-    <generateAllowChance>0.15</generateAllowChance>
-    <apparel>
-      <careIfWornByCorpse>false</careIfWornByCorpse>
-      <bodyPartGroups>
-        <li>Waist</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Belt</li>
-      </layers>
-      <tags>
-        <li>MedicalKit</li>
-      </tags>
-    </apparel>
-  </ThingDef>-->
-
-
-</ThingDefs>
+</Defs>
