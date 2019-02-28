@@ -4,9 +4,9 @@ Medkit accessory with buttons allowing the colonist to bandage their own wounds 
 
 Repair kit accessory which allows constructors to salvage broken components while repairing buildings, these can then be fixed at a machining table.
 
-https://ko-fi.com/T6T6MYO0
+My ko-fi https://ko-fi.com/T6T6MYO0
 
-My Mod Discord : https://discord.gg/bajcjsu
+My Discord https://discord.gg/bajcjsu
 
 https://ludeon.com/forums/index.php?topic=29043.0
 
