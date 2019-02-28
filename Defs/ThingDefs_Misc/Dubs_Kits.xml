@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+  <ThingDef Name="DubUnfinishedBase" Abstract="True">
+    <thingClass>UnfinishedThing</thingClass>
+    <category>Item</category>
+    <label>unfinished thing</label>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedSculpture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <useHitPoints>true</useHitPoints>
+    <isUnfinishedThing>true</isUnfinishedThing>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <selectable>true</selectable>
+    <tradeability>Never</tradeability>
+    <drawerType>RealtimeOnly</drawerType>
+    <!-- For CompForbiddable -->
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Beauty>-6</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+    <thingCategories>
+      <li>Unfinished</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="DubUnfinishedBase">
+    <defName>DubUnfinishedApparel</defName>
+    <label>unfinished apparel</label>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedApparel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="dubsApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Beauty>-6</Beauty>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="dubsApparelMakeableBase" ParentName="dubsApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>DubUnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="dubsApparelMakeableBase">
+    <defName>DubsRepairKit</defName>
+    <thingClass>Dubs_Rimkit.RepairKit</thingClass>
+    <label>Repair Kit</label>
+    <description>Allows the wearer to salvage parts from broken down buildings while fixing them, also increases construction stats.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/RepairKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Never</tickerType>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <MarketValue>1500</MarketValue>
+      <Mass>3</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.06</MoveSpeed>
+      <ConstructionSpeed>0.12</ConstructionSpeed>
+      <ConstructSuccessChance>0.12</ConstructSuccessChance>
+      <FixBrokenDownBuildingSuccessChance>0.12</FixBrokenDownBuildingSuccessChance>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <Cloth>20</Cloth>
+      <Hammer>1</Hammer>
+      <Power_Drill>1</Power_Drill>
+    </costList>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>MedicalKit</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <li>
+          <skill>Crafting</skill>
+          <minLevel>5</minLevel>
+        </li>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="dubsApparelMakeableBase">
+    <defName>GlitterKit</defName>
+    <thingClass>Dubs_Rimkit.Medkit</thingClass>
+    <label>Glitter MedKit</label>
+    <description>Allows the wearer to treat their own injuries or others without the need for beds, but not perform surgery. Also increases healing speed</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/glitterkit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Never</tickerType>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <MarketValue>1500</MarketValue>
+      <Mass>3</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MedicalOperationSpeed>0.12</MedicalOperationSpeed>
+      <MedicalTendSpeed>0.12</MedicalTendSpeed>
+      <MoveSpeed>-0.06</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <Cloth>20</Cloth>
+      <GlitterworldMedicine>10</GlitterworldMedicine>
+    </costList>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>MedicalKit</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <recipeMaker>
+      <skillRequirements>
+        <li>
+          <skill>Medicine</skill>
+          <minLevel>8</minLevel>
+        </li>
+        <li>
+          <skill>Crafting</skill>
+          <minLevel>5</minLevel>
+        </li>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="dubsApparelMakeableBase">
+    <defName>MedicalKit</defName>
+    <thingClass>Dubs_Rimkit.Medkit</thingClass>
+    <label>MedKit</label>
+    <description>Allows the wearer to treat their own injuries or others without the need for beds, but not perform surgery. Also increases healing speed</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/medkit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Never</tickerType>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MarketValue>200</MarketValue>
+      <Mass>4</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MedicalOperationSpeed>0.12</MedicalOperationSpeed>
+      <MedicalTendSpeed>0.12</MedicalTendSpeed>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <Cloth>20</Cloth>
+      <Medicine>10</Medicine>
+    </costList>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>MedicalKit</li>
+      </tags>
+    </apparel>
+    <recipeMaker>
+      <skillRequirements>
+        <li>
+          <skill>Medicine</skill>
+          <minLevel>6</minLevel>
+        </li>
+        <li>
+          <skill>Crafting</skill>
+          <minLevel>3</minLevel>
+        </li>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="dubsApparelMakeableBase">
+    <defName>MedicineBag</defName>
+    <thingClass>Dubs_Rimkit.Medkit</thingClass>
+    <label>Medicine Bag</label>
+    <description>Allows the wearer to treat their own injuries or others without the need for beds, but not perform surgery. Also increases healing speed</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/medicineBag</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>150</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MarketValue>140</MarketValue>
+      <Mass>3</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MedicalOperationSpeed>0.06</MedicalOperationSpeed>
+      <MedicalTendSpeed>0.06</MedicalTendSpeed>
+      <MoveSpeed>-0.06</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <Cloth>20</Cloth>
+      <HerbalMedicine>10</HerbalMedicine>
+    </costList>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>MedicalKit</li>
+      </tags>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <li>
+          <skill>Medicine</skill>
+          <minLevel>5</minLevel>
+        </li>
+        <li>
+          <skill>Crafting</skill>
+          <minLevel>2</minLevel>
+        </li>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+
+  <!--<ThingDef ParentName="dubsApparelMakeableBase">
+    <defName>CombatKit</defName>
+    <thingClass>Dubs_Rimkit.CombatKit</thingClass>
+    <label>CombatKit</label>
+    <description>CombatKit</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/combatKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MarketValue>200</MarketValue>
+      <Mass>4</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <Cloth>30</Cloth>
+      <Steel>50</Steel>
+    </costList>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>MedicalKit</li>
+      </tags>
+    </apparel>
+  </ThingDef>-->
+
+
+</ThingDefs>
