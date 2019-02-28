@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TendSelf.reportString>在 TargetA 照顾自己,.</TendSelf.reportString>
+  <Bandage.reportString>包扎中.</Bandage.reportString>
+  <BandageOthers.reportString>在给 TargetA 包扎.</BandageOthers.reportString>
+  <FixBrokenDownBuildingRepairKit.reportString>更换损坏的部件于 TargetA.</FixBrokenDownBuildingRepairKit.reportString>
+
+
+</LanguageData>

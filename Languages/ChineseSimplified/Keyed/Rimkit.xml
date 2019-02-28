@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <equippedKit>这个殖民者装备了一个 {0}</equippedKit>
+  <MedkitUses>剩余</MedkitUses>
+  <TendInBed>在床上治疗</TendInBed>
+  <TendInBedDesc>在最近的医疗床上处理自己的伤口</TendInBedDesc>
+  <TendTarget>治疗对象</TendTarget>
+  <TendTargetDesc>处理他人的伤口</TendTargetDesc>
+  <MedkitTendSelf>自我医疗</MedkitTendSelf>
+  <MedkitTendSelfDesc>在现场处理自己的伤口</MedkitTendSelfDesc>
+
+</LanguageData>

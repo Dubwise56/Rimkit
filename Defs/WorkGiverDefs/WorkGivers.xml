@@ -7,9 +7,9 @@
     <label>fix broken-down buildings with repair kit</label>
     <giverClass>Dubs_Rimkit.WorkGiver_FixBrokenDownBuilding</giverClass>
     <workType>Construction</workType>
-    <priorityInType>100</priorityInType>
-    <verb>replace broken components in</verb>
-    <gerund>replacing broken components in</gerund>
+    <priorityInType>130</priorityInType>
+    <verb>replace broken components with kit in</verb>
+    <gerund>replacing broken components with kit in</gerund>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>

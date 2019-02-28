@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SalvagedComponent.label>破损的零件</SalvagedComponent.label>
+  <SalvagedComponent.description>破损零件可以在机械工作台中修复.</SalvagedComponent.description>
+
+  <UnfinishedKit.label>未完成的工具</UnfinishedKit.label>
+  <UnfinishedKitStuff.label>未完成的工具</UnfinishedKitStuff.label>
+
+  <MedicineBag.label>医药包</MedicineBag.label>
+  <MedicineBag.description>允许穿戴者在不需要床的情况下治疗自己的伤口或其他伤害，但不进行手术.也会增加愈合速度</MedicineBag.description>
+
+  <MedicalKit.label>医疗工具</MedicalKit.label>
+  <MedicalKit.description>允许穿戴者在不需要床的情况下治疗自己的受伤或其他伤害，但不进行手术. 也会增加愈合速度</MedicalKit.description>
+
+  <UltraMedKit.label>闪耀世界医疗工具</UltraMedKit.label>
+  <UltraMedKit.description>允许穿戴者在不需要床的情况下治疗自己的受伤或其他伤害，但不进行手术. 也会增加愈合速度</UltraMedKit.description>
+
+  <DubsRepairKit.label>修复工具</DubsRepairKit.label>
+  <DubsRepairKit.description>允许穿戴者在修理时从损坏的建筑物中打捞零件，成功率是基于技能的,会增加建筑物的统计数值.</DubsRepairKit.description>
+
+
+</LanguageData>

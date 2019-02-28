@@ -30,7 +30,7 @@
       </li>
     </ingredients>
     <products>
-      <Component>1</Component>
+      <ComponentIndustrial>1</ComponentIndustrial>
     </products>
     <recipeUsers>
       <li>TableMachining</li>
