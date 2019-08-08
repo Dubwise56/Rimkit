@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SalvagedComponent.label>待修零件</SalvagedComponent.label>
+  <SalvagedComponent.description>待修零件可以在機械工作台修復.</SalvagedComponent.description>
+
+  <UnfinishedKit.label>半成品箱</UnfinishedKit.label>
+  <UnfinishedKitStuff.label>半成品袋</UnfinishedKitStuff.label>
+
+  <MedicineBag.label>藥物袋</MedicineBag.label>
+  <MedicineBag.description>允許佩戴者在不需要床的情況下治療自己的傷或其他人,但無法進行手術.也提高了癒合速度</MedicineBag.description>
+
+  <MedicalKit.label>醫療袋</MedicalKit.label>
+  <MedicalKit.description>允許佩戴者在不需要床的情況下治療自己的傷或其他人,但無法進行手術.也提高了癒合速度</MedicalKit.description>
+
+  <UltraMedKit.label>高科技醫療袋</UltraMedKit.label>
+  <UltraMedKit.description>允許佩戴者在不需要床的情況下治療自己的傷或其他人,但無法進行手術.也提高了癒合速度</UltraMedKit.description>
+
+  <DubsRepairKit.label>工具箱</DubsRepairKit.label>
+  <DubsRepairKit.description>允許佩戴者在修理損壞建築中取出待修零件,取出率基於技能,增加建造數值.</DubsRepairKit.description>
+
+
+</LanguageData>

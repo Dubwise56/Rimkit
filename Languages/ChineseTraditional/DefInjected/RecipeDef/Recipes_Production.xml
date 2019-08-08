@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RepairComponent.label>修復零件</RepairComponent.label>
+  <RepairComponent.description>修復一個受損零件.</RepairComponent.description>
+  <RepairComponent.jobString>修復零件中.</RepairComponent.jobString>
+
+
+</LanguageData>
