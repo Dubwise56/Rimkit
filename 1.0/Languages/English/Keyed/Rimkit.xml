@@ -9,6 +9,4 @@
   <TendTargetDesc>Tend others wounds</TendTargetDesc>
   <MedkitTendSelf>Tend Self</MedkitTendSelf>
   <MedkitTendSelfDesc>Tend thier own wounds on the spot</MedkitTendSelfDesc>
-  <AutoRefillMedicine>Auto refill</AutoRefillMedicine>
-  <AutoRefillMedicineDesc>Automatically refill the stock of medicine</AutoRefillMedicineDesc>
 </LanguageData>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TendSelf.reportString>包紮TargetA.</TendSelf.reportString>
+  <Bandage.reportString>包紮中.</Bandage.reportString>
+  <BandageOthers.reportString>包紮TargetA.</BandageOthers.reportString>
+  <FixBrokenDownBuildingRepairKit.reportString>替換TargetA中的損壞組件.</FixBrokenDownBuildingRepairKit.reportString>
+
+
+</LanguageData>
