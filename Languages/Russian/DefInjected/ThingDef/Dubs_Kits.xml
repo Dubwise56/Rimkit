@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SalvagedComponent.label>повреждённый компонент</SalvagedComponent.label>
+  <SalvagedComponent.description>Повреждённые компоненты, которые можно отремонтировать.</SalvagedComponent.description>
+
+  <MedicineBag.label>медицинская сумка</MedicineBag.label>
+  <MedicineBag.description>Примитивная аптечка. Позволяет владельцу лечить свои или чужие раны в полевых условиях. Также увеличивает скорость лечения.</MedicineBag.description>
+
+  <MedicalKit.label>аптечка</MedicalKit.label>
+  <MedicalKit.description>Индустриальная аптечка. Позволяет владельцу лечить свои или чужие раны в полевых условиях. Также увеличивает скорость лечения.</MedicalKit.description>
+
+  <UltraMedKit.label>передовая аптечка</UltraMedKit.label>
+  <UltraMedKit.description>Передовая аптечка мира-утопии. Позволяет владельцу лечить свои или чужие раны в полевых условиях. Также увеличивает скорость лечения.</UltraMedKit.description>
+
+  <DubsRepairKit.label>ремонтный комплект</DubsRepairKit.label>
+  <DubsRepairKit.description>Позволяет владельцу извлекать повреждённые компоненты при ремонте повреждённых зданий другими компонентами.</DubsRepairKit.description>
+
+</LanguageData>

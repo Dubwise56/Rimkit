@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Make_MedicineBag.label>изготовить медицинскую сумку</Make_MedicineBag.label>
+  <Make_MedicineBag.description>Изготовить медицинскую сумку.</Make_MedicineBag.description>
+  <Make_MedicineBag.jobString>изготавливает медицинскую сумку</Make_MedicineBag.jobString>
+
+  <Make_MedicalKit.label>изготовить аптечку</Make_MedicalKit.label>
+  <Make_MedicalKit.description>Изготовить аптечку.</Make_MedicalKit.description>
+  <Make_MedicalKit.jobString>изготавливает аптечку</Make_MedicalKit.jobString>
+
+  <Make_UltraMedKit.label>изготовить передовую аптечку</Make_UltraMedKit.label>
+  <Make_UltraMedKit.description>Изготовить передовую аптечку.</Make_UltraMedKit.description>
+  <Make_UltraMedKit.jobString>изготавливает передовую аптечку</Make_UltraMedKit.jobString>
+
+  <Make_DubsRepairKit.label>изготовить ремонтный комплект</Make_DubsRepairKit.label>
+  <Make_DubsRepairKit.description>Изготовить ремонтный комплект.</Make_DubsRepairKit.description>
+  <Make_DubsRepairKit.jobString>изготавливает ремонтный комплект</Make_DubsRepairKit.jobString>
+
+</LanguageData>

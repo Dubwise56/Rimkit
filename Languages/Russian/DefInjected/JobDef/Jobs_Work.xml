@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TendSelf.reportString>лечит себя в TargetA</TendSelf.reportString>
+  <Bandage.reportString>лечит себя</Bandage.reportString>
+  <BandageOthers.reportString>лечит TargetA</BandageOthers.reportString>
+  <FixBrokenDownBuildingRepairKit.reportString>заменяет неисправные части в TargetA</FixBrokenDownBuildingRepairKit.reportString>
+
+</LanguageData>

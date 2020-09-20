@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <equippedKit>Колонист носит {0}</equippedKit>
+  <MedkitUses>Использований осталось:</MedkitUses>
+  <TendInBed>Лечить в кровати</TendInBed>
+  <TendInBedDesc>Перевязать свои раны в ближайшей медицинской кровати.</TendInBedDesc>
+  <TendTarget>Лечить цель</TendTarget>
+  <TendTargetDesc>Перевязать чужие раны.</TendTargetDesc>
+  <MedkitTendSelf>Лечить себя</MedkitTendSelf>
+  <MedkitTendSelfDesc>Лечить свои раны на месте.</MedkitTendSelfDesc>
+  <AutoRefillMedicine>Автопополнение</AutoRefillMedicine>
+  <AutoRefillMedicineDesc>Автоматически пополнять запас лекарств.</AutoRefillMedicineDesc>
+
+</LanguageData>
