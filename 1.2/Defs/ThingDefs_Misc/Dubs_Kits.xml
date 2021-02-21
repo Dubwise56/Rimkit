@@ -126,7 +126,6 @@
 				<ammoDef>MedicineHerbal</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>60</baseReloadTicks>
-				<soundReload>Standard_Reload</soundReload>
 				<hotKey>Misc4</hotKey>
 				<chargeNoun>medicine</chargeNoun>
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
@@ -189,7 +188,6 @@
 				<ammoDef>MedicineIndustrial</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>60</baseReloadTicks>
-				<soundReload>Standard_Reload</soundReload>
 				<hotKey>Misc4</hotKey>
 				<chargeNoun>medicine</chargeNoun>
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
@@ -243,7 +241,6 @@
 				<ammoDef>MedicineUltratech</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>60</baseReloadTicks>
-				<soundReload>Standard_Reload</soundReload>
 				<hotKey>Misc4</hotKey>
 				<chargeNoun>medicine</chargeNoun>
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
@@ -293,7 +290,6 @@
 				<ammoDef>ComponentIndustrial</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>60</baseReloadTicks>
-				<soundReload>Standard_Reload</soundReload>
 				<hotKey>Misc4</hotKey>
 				<chargeNoun>component</chargeNoun>
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
