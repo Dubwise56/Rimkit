@@ -4,11 +4,9 @@
   <equippedKit>This colonist is equipped with a {0}</equippedKit>
   <MedkitUses>Uses remaining</MedkitUses>
   <TendInBed>Tend in bed</TendInBed>
-  <TendInBedDesc>Tend thier own wounds in the nearest medical bed</TendInBedDesc>
+  <TendInBedDesc>Tend their own wounds in the nearest medical bed</TendInBedDesc>
   <TendTarget>Tend Target</TendTarget>
   <TendTargetDesc>Tend others wounds</TendTargetDesc>
   <MedkitTendSelf>Tend Self</MedkitTendSelf>
-  <MedkitTendSelfDesc>Tend thier own wounds on the spot</MedkitTendSelfDesc>
-  <AutoRefillMedicine>Auto refill</AutoRefillMedicine>
-  <AutoRefillMedicineDesc>Automatically refill the stock of medicine</AutoRefillMedicineDesc>
+  <MedkitTendSelfDesc>Tend their own wounds on the spot</MedkitTendSelfDesc>
 </LanguageData>
