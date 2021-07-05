@@ -57,7 +57,7 @@
 		<category>Item</category>
 		<selectable>True</selectable>
 		<pathCost>10</pathCost>
-		<useHitPoints>True</useHitPoints>
+		<useHitPoints>True</useHitPoints> 
 		<graphicData>
 			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 		</graphicData>
