@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <equippedKit>Tento kolonista má ve výbavě: {0}</equippedKit>
+  <MedkitUses>Zbývá použití</MedkitUses>
+  <TendInBed>Ošetřit se v posteli</TendInBed>
+  <TendInBedDesc>Ošetří si svá vlastní zranění v nejbližší zdravotnické posteli</TendInBedDesc>
+  <TendTarget>Ošetřit cíl</TendTarget>
+  <TendTargetDesc>Ošetří zranění cíle</TendTargetDesc>
+  <MedkitTendSelf>Ošetřit se</MedkitTendSelf>
+  <MedkitTendSelfDesc>Ošetří si svá vlastní zranění na místě</MedkitTendSelfDesc>
+  <UseKitForTendJob>Auto</UseKitForTendJob>
+  <UseKitForTendJobDesc>Používat medkit automaticky, při vypnutí bude kolonista preferovat odchod do postele či odnesení raněného.</UseKitForTendJobDesc>
+
+</LanguageData>

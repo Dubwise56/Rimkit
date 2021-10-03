@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<UnfinishedKit.label>Nedokončený kit</UnfinishedKit.label>
+
+	<MedicineBag.label>Léčitelský pytel</MedicineBag.label>
+
+	<MedicineBag.description>Umožňuje nositeli léčit svá vlastní zranění nebo zranění druhých, aniž by byla potřeba postel, ale nikoliv provádět operace. Také zrychluje provádění léčení.</MedicineBag.description>
+
+	<UltraMedKit.label>Medkit z vyspělého světa</UltraMedKit.label>
+
+	<UltraMedKit.description>Umožňuje nositeli léčit svá vlastní zranění nebo zranění druhých, aniž by byla potřeba postel, ale nikoliv provádět operace. Také zrychluje provádění léčení.</UltraMedKit.description>
+
+	<DubsRepairKit.label>Opravná sada</DubsRepairKit.label>
+
+	<DubsRepairKit.description>Umožňuje nositeli zachraňovat součástky z poškozených budov a opravovat je, přičemž šance na úspěch je závislá na kolonistových schopnostech. Sada také obsahuje náhradní komponenty a zvyšuje schopnost Konstrukce.</DubsRepairKit.description>
+
+	<MedicalKit.label>Medkit</MedicalKit.label>
+
+	<MedicalKit.description>Umožňuje nositeli léčit svá vlastní zranění nebo zranění druhých, aniž by byla potřeba postel, ale nikoliv provádět operace. Také zrychluje provádění léčení.</MedicalKit.description>
+
+	<SalvagedComponent.label>Poškozený komponent</SalvagedComponent.label>
+
+	<SalvagedComponent.description>Poškozený komponent, který je možné opravit na obráběcím stole.</SalvagedComponent.description>
+
+	<UnfinishedKitStuff.label>Nedokončený kit</UnfinishedKitStuff.label>
+    
+    <Make_RepairKit.label>Vyrobit opravnou sadu</Make_RepairKit.label>
+  <Make_Wort.description></Make_Wort.description>
+  <Make_Wort.jobString></Make_Wort.jobString>
+    
+    
+
+</LanguageData>

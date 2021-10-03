@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<TendSelf.reportstring>Ošetřuje se pomocí medkitu.</TendSelf.reportstring>
+
+	<BandageOthers.reportstring>Pomocí medkitu ošetřuje: TargetA.</BandageOthers.reportstring>
+
+	<FixBrokenDownBuildingRepairKit.reportstring>Nahrazuje poškozené komponenty pomocí opravné sady</FixBrokenDownBuildingRepairKit.reportstring>
+
+</LanguageData>

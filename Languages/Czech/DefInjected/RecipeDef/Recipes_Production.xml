@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<RepairComponent.label>Opravit komponent</RepairComponent.label>
+
+	<RepairComponent.description>Opravit rozbitý komponent.</RepairComponent.description>
+
+	<RepairComponent.jobstring>Opravuje komponent.</RepairComponent.jobstring>
+    
+    <Make_DubsRepairKit.label>Vyrobit opravnou sadu</Make_DubsRepairKit.label>
+    
+    <Make_DubsRepairKit.description>Vyrobí opravnou sadu, kterou lze použít k výměně komponentů a opravě strojů a budov</Make_DubsRepairKit.description> 
+    <Make_DubsRepairKit.jobString>Vyrábí opravnou sadu</Make_DubsRepairKit.jobString>    
+
+</LanguageData>

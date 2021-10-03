@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<FixBrokenDownBuildingWithKit.label>Opravit rozbitou budovu pomocí opravné sady</FixBrokenDownBuildingWithKit.label>
+
+	<FixBrokenDownBuildingWithKit.verb>Vyměnit rozbité komponenty za ty v opravné sadě</FixBrokenDownBuildingWithKit.verb>
+
+	<FixBrokenDownBuildingWithKit.gerund>Vyměňuje rozbité komponenty</FixBrokenDownBuildingWithKit.gerund>
+
+</LanguageData>
