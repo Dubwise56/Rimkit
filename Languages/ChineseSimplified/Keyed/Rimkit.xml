@@ -9,5 +9,7 @@
   <TendTargetDesc>处理他人的伤口</TendTargetDesc>
   <MedkitTendSelf>自我医疗</MedkitTendSelf>
   <MedkitTendSelfDesc>在现场处理自己的伤口</MedkitTendSelfDesc>
+  <UseKitForTendJob>自动</UseKitForTendJob>
+  <UseKitForTendJobDesc>治疗时优先使用医疗包，然后再寻找药物</UseKitForTendJobDesc>
 
 </LanguageData>

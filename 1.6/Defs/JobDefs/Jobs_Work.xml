@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- Was TendSelf; Combat Extended defines a JobDef of that name and the later mod silently wins (GitHub issue #3). -->
 	<JobDef>
-		<defName>TendSelf</defName>
+		<defName>TendSelfWithKit</defName>
 		<driverClass>Dubs_Rimkit.JobDriver_TendSelf</driverClass>
-		<reportString>tending to TargetA with kit.</reportString>
+		<reportString>tending own wounds in TargetA with kit.</reportString>
 	</JobDef>
 
 	<!--<JobDef>

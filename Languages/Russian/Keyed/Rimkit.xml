@@ -9,7 +9,7 @@
   <TendTargetDesc>Перевязать чужие раны.</TendTargetDesc>
   <MedkitTendSelf>Лечить себя</MedkitTendSelf>
   <MedkitTendSelfDesc>Лечить свои раны на месте.</MedkitTendSelfDesc>
-  <AutoRefillMedicine>Автопополнение</AutoRefillMedicine>
-  <AutoRefillMedicineDesc>Автоматически пополнять запас лекарств.</AutoRefillMedicineDesc>
+  <UseKitForTendJob>Авто</UseKitForTendJob>
+  <UseKitForTendJobDesc>Автоматически использовать аптечку для лечения, прежде чем искать лекарства.</UseKitForTendJobDesc>
 
 </LanguageData>
